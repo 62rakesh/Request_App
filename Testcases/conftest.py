@@ -26,3 +26,22 @@ def pytest_addoption(parser):
 @pytest.fixture()
 def browser(request):
     return request.config.getoption("--browser")
+
+# Generate HTMl report
+
+
+def pytest_configure(config):
+
+    config._metadata['Project Name'] = 'HR_Request'
+    config._metadata['Customers Name'] = 'Fourvision'
+    config._metadata['Testers Name'] = 'Rakesh Patra'
+    config._metadata['Sprint'] ='2.11'
+    config._metadata['Testcases type'] = 'Regression'
+    config._metadata['Date of execution'] = '01-10-2020'
+
+
+# @pytest.mark.optionalhook
+# def pytest_metadata(metadata):
+#     metadata.pop("JAVA_HOME", None)
+#     metadata.pop("Plugins", None)
+
