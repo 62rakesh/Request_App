@@ -16,6 +16,8 @@ def setup(browser):
         driver = webdriver.Ie()
     else:
         driver = webdriver.Chrome(executable_path=".//Drivers//chromedriver.exe")
+    yield driver
+    driver.close()
     return driver
 
 
@@ -37,7 +39,7 @@ def pytest_configure(config):
     config._metadata['Testers Name'] = 'Rakesh Patra'
     config._metadata['Sprint'] ='2.11'
     config._metadata['Testcases type'] = 'Regression'
-    config._metadata['Date of execution'] = '01-10-2020'
+    config._metadata['Date of execution'] = '05-10-2020'
 
 
 # @pytest.mark.optionalhook

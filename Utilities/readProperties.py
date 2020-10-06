@@ -19,3 +19,13 @@ class Readconfig:
     def getPassword():
         pwd = config.get('common info', 'password')
         return pwd
+
+    @staticmethod
+    def getWorkflowName():
+        work_flow = config.get('common info', 'workflow_name')
+        return work_flow
+
+    @staticmethod
+    def getDescription():
+        workflow_desc = config.get('common info', 'workflow_description')
+        return workflow_desc

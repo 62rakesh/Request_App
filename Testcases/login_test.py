@@ -23,11 +23,10 @@ class Test_001_Login:
         title = self.driver.title
         print(title)
         print("Login page successfully launched")
-        self.driver.close()
         self.logger.info("############ The browser is launched successfully ########### ")
 
     @pytest.mark.sanity
-    @pytest.mark.regression
+    # @pytest.mark.regression
     def test_login(self, setup):
         self.logger.info("############ Setting up with the login test execution ########### ")
         self.driver=setup
@@ -47,7 +46,6 @@ class Test_001_Login:
         self.driver.get_screenshot_as_file(".\\Screenshoots\\login.png")
         self.logger.info("############ User is successfully logged in ########### ")
         print("Login is successfully completed")
-        self.driver.close()
 
     @pytest.mark.sanity
     def test_logout(self, setup):
@@ -76,7 +74,7 @@ class Test_001_Login:
         time.sleep(3)
         self.logger.info("############ User is successfully logged out ########### ")
         print("User is logged out")
-        self.driver.close()
+
 
 
 
