@@ -23,7 +23,6 @@ class Test_004_AssignSuccessor:
     status_name1 = Readconfig.getStatus2()
     status_name2 = Readconfig.getStatus3()
     status_name3 = Readconfig.getStatus4()
-    status_search = Readconfig.getOriginatorValue()
     logger = LogGen.loggen()
 
     def test_successor(self,setup):
