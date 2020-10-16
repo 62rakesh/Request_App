@@ -29,3 +29,24 @@ class Readconfig:
     def getDescription():
         workflow_desc = config.get('common info', 'workflow_description')
         return workflow_desc
+
+    @staticmethod
+    def getStatus1():
+        status_name_first = config.get('common info', 'status1')
+        return status_name_first
+
+    @staticmethod
+    def getStatus2():
+        status_name_second = config.get('common info', 'status2')
+        return status_name_second
+
+    @staticmethod
+    def getStatus3():
+        third_successor = config.get('common info', 'status3')
+        return third_successor
+
+    @staticmethod
+    def getStatus4():
+        fourth_successor = config.get('common info', 'status4')
+        return fourth_successor
+

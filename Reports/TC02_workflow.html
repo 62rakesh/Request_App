@@ -240,8 +240,8 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <h1>TC02_regression.html</h1>
-    <p>Report generated on 07-Oct-2020 at 14:39:15 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <h1>TC02_workflow.html</h1>
+    <p>Report generated on 14-Oct-2020 at 11:33:24 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -278,8 +278,8 @@ function filter_table(elem) {
         <td>Testers Name</td>
         <td>Rakesh Patra</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 46.49 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>4 tests ran in 118.90 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -293,12 +293,41 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">Testcases/create_workflow_test.py::Test_002_CreateWorkflow::test_workflow</td>
-          <td class="col-duration">38.60</td>
+          <td class="col-name">Testcases/create_workflow_test.py::Test_002_CreateWorkflow::test_createworkflow</td>
+          <td class="col-duration">35.78</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:create_workflow_test.py:23 ############ Setting up with the login test execution ########### 
-[32mINFO    [0m root:create_workflow_test.py:39 ############ User is successfully logged in ########### 
-[32mINFO    [0m root:create_workflow_test.py:41 ######### Creating WorkFlow #########
-[32mINFO    [0m root:create_workflow_test.py:64 ####### Workflow is created successfuly ########<br/></div></td></tr></tbody></table></body></html>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:create_workflow_test.py:27 ############ Setting up with the login test execution ########### 
+[32mINFO    [0m root:create_workflow_test.py:43 ############ User is successfully logged in ########### 
+[32mINFO    [0m root:create_workflow_test.py:45 ######### Creating WorkFlow #########
+[32mINFO    [0m root:create_workflow_test.py:68 ####### Workflow is created successfuly ########<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Testcases/create_workflow_test.py::Test_001_Login::test_home</td>
+          <td class="col-duration">7.59</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:login_test.py:19 ############ Executing testcase TC_001_login ########### 
+[32mINFO    [0m root:login_test.py:26 ############ The browser is launched successfully ###########<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Testcases/create_workflow_test.py::Test_001_Login::test_login</td>
+          <td class="col-duration">19.48</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:login_test.py:31 ############ Setting up with the login test execution ########### 
+[32mINFO    [0m root:login_test.py:47 ############ User is successfully logged in ###########<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">Testcases/create_workflow_test.py::Test_001_Login::test_logout</td>
+          <td class="col-duration">28.52</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>[32mINFO    [0m root:login_test.py:75 ############ User is successfully logged out ###########<br/></div></td></tr></tbody></table></body></html>
