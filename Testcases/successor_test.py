@@ -13,6 +13,7 @@ from Utilities.CustomLogger import LogGen
 from Utilities.readProperties import Readconfig
 
 
+@pytest.mark.successor
 class Test_004_AssignSuccessor:
     base_url = Readconfig.getApplicationURL()
     username = Readconfig.getUsername()

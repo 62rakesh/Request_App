@@ -3,7 +3,7 @@ from selenium import webdriver
 
 class status:
     search_workflow = "(//INPUT[@id='mat-input-0'])"
-    click_workflow = "(//TD[@class='ng-star-inserted'])[text()='RP-New_regression_workflow']"
+    click_workflow = "(//TD[@class='ng-star-inserted'])[text()='RP-Regression_workflow']"
     create_new_status = "//DIV[@placement='left']"
     enter_status_name = "(//INPUT[@id='name'])[2]"
     assigntype = "(//SELECT[@id='assignedtype'])"

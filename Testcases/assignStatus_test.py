@@ -16,7 +16,7 @@ from Utilities.readProperties import Readconfig
 # fixed_value = ['Review', 'Approved', 'Rejected']
 
 
-@pytest.mark.regression
+@pytest.mark.status
 class Test_003_StatusAssignment:
     base_url = Readconfig.getApplicationURL()
     username = Readconfig.getUsername()
@@ -29,7 +29,6 @@ class Test_003_StatusAssignment:
     status_name3 = Readconfig.getStatus4()
     logger = LogGen.loggen()
 
-    @pytest.mark.regression
     def test_statusassignment(self, setup):
         self.logger.info("############ Setting up with the login test execution ########### ")
         self.driver = setup

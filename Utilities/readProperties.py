@@ -50,3 +50,33 @@ class Readconfig:
         fourth_successor = config.get('common info', 'status4')
         return fourth_successor
 
+    @staticmethod
+    def getFormname():
+        form_name = config.get('common info', 'hire_form_name')
+        return form_name
+
+    @staticmethod
+    def getFormdescription():
+        form_description = config.get('common info', 'hire_form_description')
+        return form_description
+
+    @staticmethod
+    def getRequestgroupname():
+        request_group = config.get('common info', 'request_group_name')
+        return request_group
+
+    @staticmethod
+    def getGroupdescription():
+        group_description = config.get('common info','request_description')
+        return group_description
+
+    @staticmethod
+    def getRequestTypename():
+        request_type = config.get('common info', 'request_type_name')
+        return request_type
+
+    @staticmethod
+    def getRequestTypeDescription():
+        request_type_description = config.get('common info', 'request_type_description')
+        return request_type_description
+

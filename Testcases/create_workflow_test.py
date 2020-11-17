@@ -7,12 +7,11 @@ from selenium import webdriver
 from PageObjects.CreateStatus import CreateStatus
 from PageObjects.LoginPage import Login
 from PageObjects.CreateWorkflow import CreateWorkflow
-from Testcases.login_test import Test_001_Login
 from Utilities.CustomLogger import LogGen
 from Utilities.readProperties import Readconfig
 
 
-@pytest.mark.regression
+@pytest.mark.workflow
 class Test_002_CreateWorkflow:
     base_url = Readconfig.getApplicationURL()
     username = Readconfig.getUsername()
@@ -22,7 +21,6 @@ class Test_002_CreateWorkflow:
     status_name = Readconfig.getStatus1()
     logger = LogGen.loggen()
 
-    @pytest.mark.regression
     def test_createworkflow(self, setup):
         self.logger.info("############ Setting up with the login test execution ########### ")
         self.driver = setup
@@ -66,12 +64,4 @@ class Test_002_CreateWorkflow:
         self.wf.add_workflow()
         time.sleep(3)
         self.logger.info("####### Workflow is created successfuly ########")
-        # self.assignstatus = CreateStatus(self.driver)
-        # self.assignstatus.search_workflow_name(self.workflow_name)
-        # time.sleep(1)
-        # self.assignstatus.select_workflow()
-        # time.sleep(1)
-        # self.assignstatus.click_add_status_btn()
-        # time.sleep(1)
-        # self.assignstatus.enter_status(self.status_name)
-        # time.sleep(1)
+
